@@ -1,4 +1,9 @@
 #!/bin/bash
+export http_proxy=http://9.112.253.185:3128
+export https_proxy=$http_proxy
+export HTTP_PROXY=$http_proxy
+export HTTPS_PROXY=$http_proxy
+export no_proxy=ocplab.com,laptop.example.com:5000,laptop.example.com:5005,ocp4workstation.ocp4.example.com:5005,quay.example.com,127.0.0.1,10.0.0.0/24,20.0.0.0/24,30.0.0.0/24,40.0.0.0/24.50.0.0.0/24,osp16director.ctlplane.example.com,yumserver.example.com,192.168.31.0/24
 
 WARN='\033[0;31m'
 REGULAR='\033[0m'
