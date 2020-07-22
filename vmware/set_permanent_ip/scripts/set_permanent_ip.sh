@@ -3,7 +3,7 @@
 IFS=',' read -a NODEIPARR <<< "${1}"
 nodeiparray=()
 for A_NODE_IP in "${NODEIPARR[@]}"; do
-        if [[ $A_NODE_IP == "192.168.1"* ]]; then
+        if [[ $A_NODE_IP == "10.0.2"* ]]; then
                 nodeiparray+=( $A_NODE_IP )
         fi
 done
