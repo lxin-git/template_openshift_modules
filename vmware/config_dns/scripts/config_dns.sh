@@ -297,7 +297,7 @@ function performAction() {
     	
     	#Clean up removed entries -- scale down
 		if [ "${ACTION}" == "addmaster" ]; then
-			CONTROL_IPS=`cat /etc/hosts | grep -v 10.0.2.100 | grep 10.0.2 |  grep control-plane- | awk '{ print $1}'`
+			CONTROL_IPS=`cat /etc/hosts | grep -v 192.168.30.100 | grep 192.168.30 |  grep control-plane- | awk '{ print $1}'`
 			CONTROL_IP_ARRAY=($CONTROL_IPS)
 			
 			
@@ -322,7 +322,7 @@ function performAction() {
 		fi
 		
 		if [ "${ACTION}" == "addworker" ]; then
-			COMPUTE_IPS=`cat /etc/hosts | grep -v 10.0.2.100 | grep 10.0.2 |  grep compute- | awk '{ print $1}'`
+			COMPUTE_IPS=`cat /etc/hosts | grep -v 192.168.30.100 | grep 192.168.30 |  grep compute- | awk '{ print $1}'`
 			COMPUTE_IP_ARRAY=($COMPUTE_IPS)		   	
 			
 			for A_CURRENT_IP in "${COMPUTE_IP_ARRAY[@]}"; do
