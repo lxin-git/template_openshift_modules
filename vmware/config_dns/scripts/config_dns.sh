@@ -379,7 +379,7 @@ fi
 IFS=',' read -a NODEIPARR <<< "${NODE_IP}"
 nodeiparray=()
 for A_NODE_IP in "${NODEIPARR[@]}"; do
-        if [[ $A_NODE_IP == "10.0.2"* ]]; then
+        if [[ $A_NODE_IP == "192.168.30"* ]]; then
                 nodeiparray+=( $A_NODE_IP )
         fi
 done
