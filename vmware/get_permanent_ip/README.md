@@ -6,7 +6,7 @@ Copyright IBM Corp. 2019, 2020
 
 This module must be used to retrieve the DHCP assigned IPv4 for control and compute node. 
 The motivation for the module is, if we use default_ip_address to get the IPv4 for control and compute node
-we may end up retrieving the OCP internal 10.x or 172.x IPs instead of DHCP assigned 192.168.1.x IPs.
+we may end up retrieving the OCP internal 10.x or 172.x IPs instead of DHCP assigned 192.168.x.x IPs.
 
 ## Inputs
 
